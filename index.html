@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Imran Rao – Author of practical finance, crypto, and self-management books. Simple insights. No hype. Just discipline.">
+    <meta name="description" content="Imran Rao – Author of practical crypto, finance, and self-management books. Simple insights. No hype. Just discipline.">
     <title>Imran Rao | Author</title>
     <style>
         * {
@@ -11,160 +11,240 @@
             padding: 0;
             box-sizing: border-box;
         }
+
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
             line-height: 1.6;
             color: #1a1a1a;
-            background-color: #fafafa;
+            background-color: #f5f5f0;
             padding: 2rem 1rem;
         }
 
         .container {
-            max-width: 800px;
+            max-width: 1100px;
             margin: 0 auto;
             background: white;
-            border-radius: 16px;
+            border-radius: 20px;
             padding: 2rem;
             box-shadow: 0 4px 20px rgba(0,0,0,0.05);
         }
 
-        h1 {
-            font-size: 2rem;
-            margin-bottom: 0.5rem;
-            color: #0a0a0a;
-        }
-
-        .tagline {
-            font-size: 1.2rem;
-            color: #2c7da0;
-            margin-bottom: 1rem;
-            border-left: 4px solid #2c7da0;
-            padding-left: 1rem;
-        }
-
-        .bio {
-            background: #f0f4f8;
-            padding: 1.2rem;
-            border-radius: 12px;
-            margin: 1.5rem 0;
-            font-style: normal;
-            border-left: 4px solid #2c7da0;
-        }
-
-        h2 {
-            font-size: 1.4rem;
-            margin: 1.5rem 0 1rem 0;
-            color: #0a0a0a;
-            border-bottom: 2px solid #eaeef2;
-            padding-bottom: 0.3rem;
-        }
-
-        .book-list {
-            list-style: none;
-            margin: 1rem 0;
-        }
-
-        .book-list li {
-            margin-bottom: 0.6rem;
-            padding-left: 1.2rem;
-            position: relative;
-        }
-
-        .book-list li::before {
-            content: "📘";
-            position: absolute;
-            left: -0.2rem;
-            top: 0;
-        }
-
-        a {
-            color: #2c7da0;
-            text-decoration: none;
-            border-bottom: 1px dotted #2c7da0;
-        }
-
-        a:hover {
-            color: #1f5e7a;
-            border-bottom: 1px solid #1f5e7a;
-        }
-
-        .connect {
-            background: #eef2f5;
-            padding: 1.2rem;
-            border-radius: 12px;
-            margin: 1.5rem 0;
+        /* Navigation */
+        nav {
+            background: #1a3a3a;
+            padding: 1rem 2rem;
+            border-radius: 40px;
+            margin-bottom: 2rem;
             text-align: center;
         }
-
-        .connect a {
-            margin: 0 0.75rem;
-            display: inline-block;
-            border-bottom: none;
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
             font-weight: 500;
         }
-
-        hr {
-            margin: 1.5rem 0;
-            border: none;
-            border-top: 1px solid #e0e6ea;
+        nav a:hover {
+            color: #c7e0e0;
         }
 
-        .footer {
-            font-size: 0.8rem;
+        /* Hero Banner */
+        .hero {
+            background: linear-gradient(135deg, #1a3a3a 0%, #2c5a5a 100%);
+            color: white;
+            padding: 3rem 2rem;
+            border-radius: 20px;
             text-align: center;
-            color: #6b7a86;
-            margin-top: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        /* Bio Box */
+        .bio {
+            background: #eef2f0;
+            padding: 1.5rem;
+            border-radius: 16px;
+            margin: 1.5rem 0;
+            border-left: 4px solid #2c7da0;
+        }
+
+        /* Section Headings */
+        h2 {
+            font-size: 1.8rem;
+            margin: 2rem 0 1rem 0;
+            color: #1a3a3a;
+            border-bottom: 2px solid #e0e6e0;
+            padding-bottom: 0.5rem;
+        }
+
+        /* Book Grid */
+        .book-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+        .book-card {
+            background: #fafaf5;
+            padding: 1rem;
+            border-radius: 12px;
+            border: 1px solid #e0e6e0;
+        }
+        .book-card strong {
+            color: #1a3a3a;
+        }
+
+        /* Series Boxes */
+        .series-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+        .series-card {
+            padding: 1rem;
+            border-radius: 12px;
+            background: #fafaf5;
+            border-left: 6px solid;
+        }
+        .series-card.foundation { border-left-color: #2c7da0; }
+        .series-card.market { border-left-color: #e09d32; }
+        .series-card.wealth { border-left-color: #4a6fa5; }
+        .series-card.professional { border-left-color: #6b5b95; }
+
+        /* Latest Post */
+        .latest-post {
+            background: #eef2f0;
+            padding: 1.5rem;
+            border-radius: 16px;
+            margin: 1.5rem 0;
+        }
+        .latest-post h3 {
+            margin-bottom: 0.5rem;
+        }
+        .latest-post .date {
+            font-size: 0.85rem;
+            color: #6b7a6b;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #e0e6e0;
+            font-size: 0.85rem;
+            color: #6b7a6b;
+        }
+        .social-links {
+            margin: 1rem 0;
+        }
+        .social-links a {
+            margin: 0 0.75rem;
+            text-decoration: none;
+            color: #1a3a3a;
+        }
+
+        /* Buttons */
+        .button {
+            display: inline-block;
+            background: #1a3a3a;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 30px;
+            text-decoration: none;
+            margin-top: 0.5rem;
+        }
+
+        @media (max-width: 700px) {
+            .container {
+                padding: 1rem;
+            }
+            nav a {
+                display: inline-block;
+                margin: 0.3rem;
+            }
+            .hero h1 {
+                font-size: 1.8rem;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Imran Rao</h1>
-        <div class="tagline">Simple crypto insights. Market psychology. Long-term wealth-building.</div>
-        
+        <!-- Navigation Menu -->
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="blog.html">Blog</a>
+            <a href="books.html">Books</a>
+            <a href="crypto-series.html">Crypto Series</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <!-- Hero Banner -->
+        <div class="hero">
+            <h1>Imran Rao</h1>
+            <p>Simple crypto insights. Market psychology. Long-term wealth-building.</p>
+            <p style="font-size: 1rem; margin-top: 0.5rem;">No hype. Just discipline.</p>
+        </div>
+
+        <!-- Bio Box -->
         <div class="bio">
             💡 I started investing in crypto in 2017. I lost money chasing hype. I learned discipline the hard way. Now I help beginners avoid my mistakes. These books are the systems I wish I had.
         </div>
 
-        <h2>📚 Crypto & Wealth Series</h2>
-        <ul class="book-list">
-            <li><strong>Crypto Clarity</strong> – A beginner's 90-day blueprint to build wealth, not stress</li>
-            <li><strong>Crypto Scams & Security</strong> – Your 7-day blueprint to bulletproof wallets and spot scams</li>
-            <li><strong>Nano Personal Finance</strong> – A beginner's guide to budgeting, saving, and investing</li>
-            <li><strong>The "1 Coin to Blast & Hold" Myth</strong> – What smart money is actually buying</li>
-        </ul>
-
-        <h2>🧠 Practical Self-Management</h2>
-        <ul class="book-list">
-            <li><strong>Practical Emotional Control</strong> – Stop overreacting. Stay steady in any situation.</li>
-            <li><strong>The ADHD Life Guide</strong> – Practical strategies for adults managing focus, time, and relationships</li>
-            <li><strong>The Anxiety Survival Guide</strong> – Practical strategies for men managing stress, worry, and overthinking</li>
-            <li><strong>Climate-Adapted Living</strong> – What to do where you actually live</li>
-            <li><strong>The AI Survival Guide for the Rest of Us</strong> – Future-proof your career using AI – no coding required</li>
-            <li><strong>Digital Dopamine Detox</strong> – A calm 30-day plan to reclaim your focus</li>
-        </ul>
-
-        <h2>📋 Health Planners & Cookbooks</h2>
-        <ul class="book-list">
-            <li><strong>The Chronic Illness Medical Planner</strong> – 120-day symptom tracker</li>
-            <li><strong>The ADHD Medical Planner</strong> – Symptom tracker and medication log</li>
-            <li><strong>The Cancer Care Binder</strong> – Treatment tracker for patients and survivors</li>
-            <li><strong>The Anti-Inflammatory Cookbook</strong> – Meal planner for chronic inflammation</li>
-        </ul>
-
-        <div class="connect">
-            🔗 <strong>Connect with me</strong><br>
-            <a href="#">Binance Square</a> • 
-            <a href="#">X (Twitter)</a> • 
-            <a href="#">YouTube</a>
+        <!-- Featured Books Section -->
+        <h2>📚 Featured Books</h2>
+        <div class="book-grid">
+            <div class="book-card"><strong>Crypto Clarity</strong><br>A beginner's 90-day blueprint to build wealth, not stress</div>
+            <div class="book-card"><strong>Crypto Scams & Security</strong><br>Your 7-day blueprint to bulletproof wallets and spot scams</div>
+            <div class="book-card"><strong>Practical Emotional Control</strong><br>Stop overreacting. Stay steady in any situation.</div>
+            <div class="book-card"><strong>The ADHD Life Guide</strong><br>Practical strategies for adults managing focus, time, and relationships</div>
         </div>
 
-        <hr>
+        <!-- Crypto & Wealth Series -->
+        <h2>📈 Crypto & Wealth Series</h2>
+        <div class="series-grid">
+            <div class="series-card foundation"><strong>🟢 Foundation Series</strong><br>Beginner track – Start here</div>
+            <div class="series-card market"><strong>🟠 Market Cycle Series</strong><br>Core strategy – Bear, Bull, Exit</div>
+            <div class="series-card wealth"><strong>🔵 Wealth & Psychology Series</strong><br>Mindset + wealth track</div>
+            <div class="series-card professional"><strong>🟣 Professional Portfolio Series</strong><br>Advanced investor track</div>
+        </div>
+        <a href="crypto-series.html" class="button">View Full Crypto Series →</a>
 
+        <!-- Latest Blog Post -->
+        <h2>📝 Latest Post</h2>
+        <div class="latest-post">
+            <h3>How to Spot a Crypto Scam</h3>
+            <div class="date">April 5, 2025</div>
+            <p>Most scams follow the same pattern. Here is what to look for before you invest...</p>
+            <a href="blog.html" class="button">Read more →</a>
+        </div>
+
+        <!-- Visitor Counter (FlagCounter) -->
+        <div style="text-align: center; margin: 2rem 0 1rem 0;">
+            <a href="https://info.flagcounter.com/g1a5"><img src="https://s01.flagcounter.com/count2/g1a5/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_10/viewers_0/labels_0/pageviews_0/flags_0/percent_0/" alt="Flag Counter" border="0"></a>
+        </div>
+
+        <!-- Footer with Social Links -->
         <div class="footer">
-            No hype. Just discipline. 📖<br>
-            &copy; Imran Rao
-        </div><a href="https://info.flagcounter.com/g1a5"><img src="https://s01.flagcounter.com/count2/g1a5/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_10/viewers_0/labels_0/pageviews_0/flags_0/percent_0/" alt="Flag Counter" border="0"></a>
+            <div class="social-links">
+                🔗 <a href="#">Binance Square</a> • 
+                <a href="#">X (Twitter)</a> • 
+                <a href="#">YouTube</a> • 
+                <a href="#">GitHub</a>
+            </div>
+            <div>© 2025 Imran Rao</div>
+            <div style="margin-top: 0.5rem;">No hype. Just discipline. 📖</div>
+        </div>
     </div>
 </body>
 </html>
