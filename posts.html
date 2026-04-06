@@ -19,7 +19,7 @@
         }
 
         .container {
-            max-width: 1100px;
+            max-width: 1200px;
             margin: 0 auto;
             background: white;
             border-radius: 20px;
@@ -49,16 +49,53 @@
 
         h1 {
             font-size: 1.8rem;
-            margin-bottom: 0.5rem;
+            margin-bottom: 1rem;
         }
 
-                .post {
+        .content-wrapper {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+        .main-content {
+            flex: 2;
+            min-width: 250px;
+        }
+        .sidebar {
+            flex: 1;
+            min-width: 200px;
+            background: #fafaf5;
+            padding: 1rem;
+            border-radius: 16px;
+            align-self: start;
+        }
+        .sidebar h3 {
+            margin-bottom: 0.5rem;
+            color: #1a3a3a;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding-left: 0;
+            margin-bottom: 1rem;
+        }
+        .sidebar li {
+            margin-bottom: 0.5rem;
+        }
+        .sidebar a {
+            text-decoration: none;
+            color: #2c7da0;
+        }
+        .sidebar a:hover {
+            text-decoration: underline;
+        }
+
+        .post {
             background: #fafaf5;
             padding: 1rem;
             margin-bottom: 1rem;
             border-radius: 16px;
             border-left: 4px solid #2c7da0;
-            max-width: 700px;
+            max-width: 100%;
         }
         .date {
             color: gray;
@@ -81,7 +118,7 @@
             font-size: 0.8rem;
         }
 
-        @media (max-width: 600px) {
+        @media (max-width: 700px) {
             .container {
                 padding: 1rem;
             }
@@ -91,6 +128,9 @@
             }
             h1 {
                 font-size: 1.5rem;
+            }
+            .content-wrapper {
+                flex-direction: column;
             }
         }
     </style>
@@ -106,54 +146,71 @@
             <a href="contact.html">Contact</a>
         </nav>
 
-        <h1>📝 Daily Posts</h1>
-            
-
         <div class="content-wrapper">
             <div class="main-content">
+                <h1>📝 Daily Posts</h1>
+
                 <div class="post">
+                    <h2>Why Most Crypto Beginners Lose Money</h2>
+                    <div class="date">April 5, 2025</div>
+                    <p>Every bull market, millions of new investors enter crypto. Most of them lose money. Not because crypto is a scam. Because they make the same predictable mistakes over and over.</p>
+                    
+                    <p><strong>Mistake #1: Chasing Hype</strong><br>
+                    They buy what's already pumping. A coin goes up 200% in a week. They see the green candles and FOMO in. By the time they buy, the smart money is already selling. They buy the top. Then they panic sell the bottom.</p>
+                    
+                    <p><strong>Mistake #2: No Risk Management</strong><br>
+                    They put too much into one coin. They don't use stop losses. They don't size positions properly. One bad trade wipes out weeks of gains. Professional investors risk 1-2% per trade. Beginners risk everything on a meme coin.</p>
+                    
+                    <p><strong>Mistake #3: No Exit Strategy</strong><br>
+                    They don't know when to sell. They watch their portfolio go up 5x, then back down to break even. They hold all the way down because they don't have a plan. Smart money takes profits on the way up. Beginners hold until it's too late.</p>
+                    
+                    <p><strong>Mistake #4: Ignoring Market Psychology</strong><br>
+                    They think crypto is about technology. It's about psychology. Fear and greed drive prices more than fundamentals. Beginners buy when everyone is greedy (the top). They sell when everyone is fearful (the bottom). The opposite is profitable.</p>
+                    
+                    <p><strong>Mistake #5: No System</strong><br>
+                    They trade based on emotion, not rules. They don't have a written plan. They don't track their trades. They don't learn from their mistakes. Without a system, you are gambling, not investing.</p>
+                    
+                    <p>The good news is that these mistakes are avoidable. You don't need to be a genius. You need discipline, risk management, and a system. The same principles apply whether you are trading crypto, stocks, or anything else.</p>
+                    
+                    <p>Start with position sizing. Never risk more than you can afford to lose. Have an exit plan before you enter. Take profits on the way up. And most importantly, control your emotions. The market will test you. The ones who survive are the ones who stay disciplined.</p>
+                </div>
 
-        <div class="post">
-            <h2>Why Most Crypto Beginners Lose Money</h2>
-            <div class="date">April 5, 2025</div>
-            <p>Every bull market, millions of new investors enter crypto. Most of them lose money. Not because crypto is a scam. Because they make the same predictable mistakes over and over.</p>
-            
-            <p><strong>Mistake #1: Chasing Hype</strong><br>
-            They buy what's already pumping. A coin goes up 200% in a week. They see the green candles and FOMO in. By the time they buy, the smart money is already selling. They buy the top. Then they panic sell the bottom.</p>
-            
-            <p><strong>Mistake #2: No Risk Management</strong><br>
-            They put too much into one coin. They don't use stop losses. They don't size positions properly. One bad trade wipes out weeks of gains. Professional investors risk 1-2% per trade. Beginners risk everything on a meme coin.</p>
-            
-            <p><strong>Mistake #3: No Exit Strategy</strong><br>
-            They don't know when to sell. They watch their portfolio go up 5x, then back down to break even. They hold all the way down because they don't have a plan. Smart money takes profits on the way up. Beginners hold until it's too late.</p>
-            
-            <p><strong>Mistake #4: Ignoring Market Psychology</strong><br>
-            They think crypto is about technology. It's about psychology. Fear and greed drive prices more than fundamentals. Beginners buy when everyone is greedy (the top). They sell when everyone is fearful (the bottom). The opposite is profitable.</p>
-            
-            <p><strong>Mistake #5: No System</strong><br>
-            They trade based on emotion, not rules. They don't have a written plan. They don't track their trades. They don't learn from their mistakes. Without a system, you are gambling, not investing.</p>
-            
-            <p>The good news is that these mistakes are avoidable. You don't need to be a genius. You need discipline, risk management, and a system. The same principles apply whether you are trading crypto, stocks, or anything else.</p>
-            
-            <p>Start with position sizing. Never risk more than you can afford to lose. Have an exit plan before you enter. Take profits on the way up. And most importantly, control your emotions. The market will test you. The ones who survive are the ones who stay disciplined.</p>
-        </div>
+                <div class="post">
+                    <h2>How to Spot a Crypto Scam</h2>
+                    <div class="date">April 5, 2025</div>
+                    <p>Most scams follow the same pattern. Scammers promise guaranteed returns, use fake celebrity endorsements, and create urgency. They want you to act fast without thinking. Legitimate investments don't need to pressure you. If it sounds too good to be true, it is. Always do your own research. Never send crypto to someone you don't know. Use only trusted exchanges. And remember: no one gives away free money.</p>
+                </div>
 
-        <div class="post">
-            <h2>How to Spot a Crypto Scam</h2>
-            <div class="date">April 5, 2025</div>
-            <p>Most scams follow the same pattern. Scammers promise guaranteed returns, use fake celebrity endorsements, and create urgency. They want you to act fast without thinking. Legitimate investments don't need to pressure you. If it sounds too good to be true, it is. Always do your own research. Never send crypto to someone you don't know. Use only trusted exchanges. And remember: no one gives away free money.</p>
-        </div>
+                <div class="post">
+                    <h2>Why You Don't Need 100 Different Coins</h2>
+                    <div class="date">April 4, 2025</div>
+                    <p>Diversification is good. Over-diversification is a trap. Some investors buy dozens of coins thinking they are spreading risk. But owning 100 different coins does not protect you. Most coins will go to zero. You only need a few strong convictions. Build a foundation with proven coins like Bitcoin and Ethereum. Add a few high-conviction plays. That is enough. More coins mean more research, more stress, and more mistakes. Focus on quality, not quantity.</p>
+                </div>
 
-        <div class="post">
-            <h2>Why You Don't Need 100 Different Coins</h2>
-            <div class="date">April 4, 2025</div>
-            <p>Diversification is good. Over-diversification is a trap. Some investors buy dozens of coins thinking they are spreading risk. But owning 100 different coins does not protect you. Most coins will go to zero. You only need a few strong convictions. Build a foundation with proven coins like Bitcoin and Ethereum. Add a few high-conviction plays. That is enough. More coins mean more research, more stress, and more mistakes. Focus on quality, not quantity.</p>
-        </div>
+                <div class="post">
+                    <h2>The #1 Mistake Beginner Crypto Investors Make</h2>
+                    <div class="date">April 3, 2025</div>
+                    <p>Everyone chases the next 100x. The smart money does something different. Beginners buy what is already pumping. They see a coin up 200% and think it will go higher. They buy the top. Then they panic sell the bottom. The smart money buys when no one is interested. They accumulate during bear markets. They sell during bull markets when everyone is greedy. The opposite of what beginners do is usually the right move. Learn to be patient. Learn to buy fear and sell greed.</p>
+                </div>
+            </div>
 
-        <div class="post">
-            <h2>The #1 Mistake Beginner Crypto Investors Make</h2>
-            <div class="date">April 3, 2025</div>
-            <p>Everyone chases the next 100x. The smart money does something different. Beginners buy what is already pumping. They see a coin up 200% and think it will go higher. They buy the top. Then they panic sell the bottom. The smart money buys when no one is interested. They accumulate during bear markets. They sell during bull markets when everyone is greedy. The opposite of what beginners do is usually the right move. Learn to be patient. Learn to buy fear and sell greed.</p>
+            <div class="sidebar">
+                <h3>📚 Featured Books</h3>
+                <ul>
+                    <li><a href="#">Crypto Clarity</a></li>
+                    <li><a href="#">Crypto Scams & Security</a></li>
+                    <li><a href="#">Nano Personal Finance</a></li>
+                    <li><a href="#">Practical Emotional Control</a></li>
+                    <li><a href="#">The ADHD Life Guide</a></li>
+                </ul>
+                <h3>🔗 Connect</h3>
+                <ul>
+                    <li><a href="https://app.binance.com/uni-qr/cpro/imranraousa?l=en&r=GPBQSYCM&uc=web_square_share_link&us=copylink" target="_blank">Binance Square</a></li>
+                    <li><a href="https://x.com/ImranRa34011317" target="_blank">X (Twitter)</a></li>
+                    <li><a href="https://youtube.com/@nicheblink4264" target="_blank">YouTube</a></li>
+                    <li><a href="https://github.com/imranrao-ebooks" target="_blank">GitHub</a></li>
+                </ul>
+            </div>
         </div>
 
         <div class="footer">
