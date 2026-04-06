@@ -4,89 +4,233 @@
     <meta charset="UTF-8">
     <title>Imran Rao | Crypto Series</title>
     <style>
-        body { font-family: Arial; max-width: 1000px; margin: auto; padding: 2rem; background: #f5f5f0; }
-        nav { background: #1a3a3a; padding: 1rem; border-radius: 40px; text-align: center; margin-bottom: 2rem; }
-        nav a { color: white; margin: 0 1rem; text-decoration: none; }
-        h1 { color: #1a3a3a; }
-        .series { background: white; padding: 1.5rem; margin: 1.5rem 0; border-radius: 16px; border-left: 6px solid; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background-color: #f5f5f0;
+            padding: 1rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+        }
+
+        nav {
+            background: #1a3a3a;
+            padding: 0.8rem;
+            border-radius: 40px;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 0.6rem;
+            font-weight: 500;
+            font-size: 0.9rem;
+            display: inline-block;
+            padding: 0.3rem 0;
+        }
+        nav a:hover {
+            color: #c7e0e0;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .content-wrapper {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+        .main-content {
+            flex: 2;
+            min-width: 250px;
+        }
+        .sidebar {
+            flex: 1;
+            min-width: 200px;
+            background: #fafaf5;
+            padding: 1rem;
+            border-radius: 16px;
+            align-self: start;
+        }
+        .sidebar h3 {
+            margin-bottom: 0.5rem;
+            color: #1a3a3a;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding-left: 0;
+            margin-bottom: 1rem;
+        }
+        .sidebar li {
+            margin-bottom: 0.5rem;
+        }
+        .sidebar a {
+            text-decoration: none;
+            color: #2c7da0;
+        }
+        .sidebar a:hover {
+            text-decoration: underline;
+        }
+
+        .series {
+            background: white;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 16px;
+            border-left: 6px solid;
+        }
         .foundation { border-left-color: #2c7da0; }
         .market { border-left-color: #e09d32; }
         .wealth { border-left-color: #4a6fa5; }
         .professional { border-left-color: #6b5b95; }
-        .series h2 { margin-top: 0; }
-        .book-list { margin: 0.5rem 0 0 1.5rem; }
-        .footer { text-align: center; margin-top: 3rem; padding-top: 1rem; border-top: 1px solid #ddd; }
-        .social-links a { margin: 0 0.5rem; text-decoration: none; color: #1a3a3a; }
+        .series h2 {
+            margin-top: 0;
+            font-size: 1.3rem;
+        }
+        .series ul {
+            margin: 0.5rem 0 0 1.5rem;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 1.5rem;
+            padding-top: 1rem;
+            border-top: 1px solid #e0e6e0;
+            font-size: 0.75rem;
+            color: #6b7a6b;
+        }
+        .social-links a {
+            margin: 0 0.4rem;
+            text-decoration: none;
+            color: #1a3a3a;
+            font-size: 0.8rem;
+        }
+
+        @media (max-width: 700px) {
+            .container {
+                padding: 1rem;
+            }
+            nav a {
+                margin: 0 0.3rem;
+                font-size: 0.75rem;
+            }
+            h1 {
+                font-size: 1.5rem;
+            }
+            .content-wrapper {
+                flex-direction: column;
+            }
+        }
     </style>
 </head>
 <body>
-    <nav>
-    <a href="index.html">Home</a>
-    <a href="posts.html">Posts</a>
-    <a href="books.html">Books</a>
-    <a href="crypto-series.html">Crypto Series</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-</nav>
-    </nav>
+    <div class="container">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="posts.html">Posts</a>
+            <a href="books.html">Books</a>
+            <a href="crypto-series.html">Crypto Series</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
 
-    <h1>📈 Crypto & Wealth Series</h1>
-    <p>Structured learning system for investors from beginner to professional.</p>
+        <div class="content-wrapper">
+            <div class="main-content">
+                <h1>📈 Crypto & Wealth Series</h1>
+                <p>Structured learning system for investors from beginner to professional.</p>
 
-    <div class="series foundation">
-        <h2>🟢 Foundation Series (Beginner Track)</h2>
-        <p>Start here. Learn how to survive, manage risk, and build a safe investing mindset.</p>
-        <ul class="book-list">
-            <li>Crypto Trading for Beginners</li>
-            <li>Risk First: The Beginner's Guide to Safe and Structured Crypto Investing</li>
-        </ul>
+                <div class="series foundation">
+                    <h2>🟢 Foundation Series (Beginner Track)</h2>
+                    <p>Start here. Learn how to survive, manage risk, and build a safe investing mindset.</p>
+                    <ul>
+                        <li>Crypto Trading for Beginners</li>
+                        <li>Risk First: The Beginner's Guide to Safe and Structured Crypto Investing</li>
+                    </ul>
+                </div>
+
+                <div class="series market">
+                    <h2>🟠 Market Cycle Series (Core Strategy Track)</h2>
+                    <p>Master the cycles. Bear, bull, exit strategies.</p>
+                    <ul>
+                        <li>Bear Market Playbook</li>
+                        <li>Bull Market Playbook</li>
+                        <li>Market Signals Playbook</li>
+                        <li>Exit Strategy Playbook</li>
+                    </ul>
+                </div>
+
+                <div class="series wealth">
+                    <h2>🔵 Wealth & Psychology Series (Mindset + Wealth Track)</h2>
+                    <p>Discipline. Psychology. Long-term wealth building.</p>
+                    <ul>
+                        <li>Behavioral Investing Playbook</li>
+                        <li>Long-Term Wealth Playbook</li>
+                        <li>Wealth Protection Blueprint</li>
+                    </ul>
+                </div>
+
+                <div class="series professional">
+                    <h2>🟣 Professional Portfolio Series (Advanced Investor Track)</h2>
+                    <p>Build professional-grade portfolio systems.</p>
+                    <ul>
+                        <li>ETF Portfolio Playbook</li>
+                        <li>Asset Allocation Playbook</li>
+                        <li>Risk Management Playbook</li>
+                        <li>Institutional Portfolio Playbook</li>
+                        <li>Portfolio Architecture Playbook</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <h3>📚 Featured Books</h3>
+                <ul>
+                    <li><a href="#">Crypto Clarity</a></li>
+                    <li><a href="#">Crypto Scams & Security</a></li>
+                    <li><a href="#">Nano Personal Finance</a></li>
+                    <li><a href="#">Practical Emotional Control</a></li>
+                    <li><a href="#">The ADHD Life Guide</a></li>
+                </ul>
+                <h3>🔗 Connect</h3>
+                <ul>
+                    <li><a href="https://app.binance.com/uni-qr/cpro/imranraousa?l=en&r=GPBQSYCM&uc=web_square_share_link&us=copylink" target="_blank">Binance Square</a></li>
+                    <li><a href="https://x.com/ImranRa34011317" target="_blank">X (Twitter)</a></li>
+                    <li><a href="https://youtube.com/@nicheblink4264" target="_blank">YouTube</a></li>
+                    <li><a href="https://github.com/imranrao-ebooks" target="_blank">GitHub</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="social-links">
+                <a href="https://app.binance.com/uni-qr/cpro/imranraousa?l=en&r=GPBQSYCM&uc=web_square_share_link&us=copylink" target="_blank" rel="noopener noreferrer">🔗 Binance Square</a> | 
+                <a href="https://x.com/ImranRa34011317" target="_blank" rel="noopener noreferrer">🐦 X</a> | 
+                <a href="https://youtube.com/@nicheblink4264" target="_blank" rel="noopener noreferrer">📺 YouTube</a> | 
+                <a href="https://github.com/imranrao-ebooks" target="_blank" rel="noopener noreferrer">🐙 GitHub</a>
+            </div>
+            <p>© 2025 Imran Rao</p>
+            <p>No hype. Just discipline. 📖</p>
+        </div>
     </div>
 
-    <div class="series market">
-        <h2>🟠 Market Cycle Series (Core Strategy Track)</h2>
-        <p>Master the cycles. Bear, bull, exit strategies.</p>
-        <ul class="book-list">
-            <li>Bear Market Playbook</li>
-            <li>Bull Market Playbook</li>
-            <li>Market Signals Playbook</li>
-            <li>Exit Strategy Playbook</li>
-        </ul>
-    </div>
-
-    <div class="series wealth">
-        <h2>🔵 Wealth & Psychology Series (Mindset + Wealth Track)</h2>
-        <p>Discipline. Psychology. Long-term wealth building.</p>
-        <ul class="book-list">
-            <li>Behavioral Investing Playbook</li>
-            <li>Long-Term Wealth Playbook</li>
-            <li>Wealth Protection Blueprint</li>
-        </ul>
-    </div>
-
-    <div class="series professional">
-        <h2>🟣 Professional Portfolio Series (Advanced Investor Track)</h2>
-        <p>Build professional-grade portfolio systems.</p>
-        <ul class="book-list">
-            <li>ETF Portfolio Playbook</li>
-            <li>Asset Allocation Playbook</li>
-            <li>Risk Management Playbook</li>
-            <li>Institutional Portfolio Playbook</li>
-            <li>Portfolio Architecture Playbook</li>
-        </ul>
-    </div>
-
-    <div class="footer">
-    <div class="social-links">
-        <a href="https://app.binance.com/uni-qr/cpro/imranraousa?l=en&r=GPBQSYCM&uc=web_square_share_link&us=copylink" target="_blank" rel="noopener noreferrer">🔗 Binance Square</a> • 
-        <a href="https://x.com/ImranRa34011317" target="_blank" rel="noopener noreferrer">🐦 X (Twitter)</a> • 
-        <a href="https://youtube.com/@nicheblink4264" target="_blank" rel="noopener noreferrer">📺 YouTube</a> • 
-        <a href="https://github.com/imranrao-ebooks" target="_blank" rel="noopener noreferrer">🐙 GitHub</a>
-    </div>
-    <p>© 2025 Imran Rao</p>
-    <p>No hype. Just discipline. 📖</p>
-</div>
-        <p>© 2025 Imran Rao</p>
-        <p>No hype. Just discipline. 📖</p>
-    </div>
+    <script data-goatcounter="https://imranrao.goatcounter.com/count"
+            async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>
