@@ -2,48 +2,182 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>Imran Rao | About</title>
     <style>
-        body { font-family: Arial; max-width: 800px; margin: auto; padding: 2rem; background: #f5f5f0; }
-        nav { background: #1a3a3a; padding: 1rem; border-radius: 40px; text-align: center; margin-bottom: 2rem; }
-        nav a { color: white; margin: 0 1rem; text-decoration: none; }
-        .bio { background: white; padding: 2rem; border-radius: 16px; line-height: 1.6; }
-        .footer { text-align: center; margin-top: 3rem; padding-top: 1rem; border-top: 1px solid #ddd; }
-        .social-links a { margin: 0 0.5rem; text-decoration: none; color: #1a3a3a; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.5;
+            color: #1a1a1a;
+            background-color: #f5f5f0;
+            padding: 1rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+        }
+
+        nav {
+            background: #1a3a3a;
+            padding: 0.8rem;
+            border-radius: 40px;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 0.6rem;
+            font-weight: 500;
+            font-size: 0.9rem;
+            display: inline-block;
+            padding: 0.3rem 0;
+        }
+        nav a:hover {
+            color: #c7e0e0;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+
+        .content-wrapper {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+        .main-content {
+            flex: 2;
+            min-width: 250px;
+        }
+        .sidebar {
+            flex: 1;
+            min-width: 200px;
+            background: #fafaf5;
+            padding: 1rem;
+            border-radius: 16px;
+            align-self: start;
+        }
+        .sidebar h3 {
+            margin-bottom: 0.5rem;
+            color: #1a3a3a;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding-left: 0;
+            margin-bottom: 1rem;
+        }
+        .sidebar li {
+            margin-bottom: 0.5rem;
+        }
+        .sidebar a {
+            text-decoration: none;
+            color: #2c7da0;
+        }
+
+        .bio p {
+            margin-bottom: 1rem;
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 1.5rem;
+            padding-top: 1rem;
+            border-top: 1px solid #e0e6e0;
+            font-size: 0.75rem;
+            color: #6b7a6b;
+        }
+        .social-links a {
+            margin: 0 0.4rem;
+            text-decoration: none;
+            color: #1a3a3a;
+            font-size: 0.8rem;
+        }
+
+        @media (max-width: 700px) {
+            .container {
+                padding: 1rem;
+            }
+            nav a {
+                margin: 0 0.3rem;
+                font-size: 0.75rem;
+            }
+            h1 {
+                font-size: 1.5rem;
+            }
+            .content-wrapper {
+                flex-direction: column;
+            }
+            .bio p {
+                font-size: 16px;
+            }
+            .sidebar {
+                margin-top: 0;
+            }
+        }
     </style>
 </head>
 <body>
-    <nav>
-    <a href="index.html">Home</a>
-    <a href="posts.html">Posts</a>
-    <a href="books.html">Books</a>
-    <a href="crypto-series.html">Crypto Series</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-</nav>
+    <div class="container">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="posts.html">Posts</a>
+            <a href="books.html">Books</a>
+            <a href="crypto-series.html">Crypto Series</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
 
-    <h1>About Imran Rao</h1>
+        <div class="content-wrapper">
+            <div class="main-content">
+                <h1>About Imran Rao</h1>
+                <div class="bio">
+                    <p>I started investing in crypto in 2017. I lost money chasing hype. I learned discipline the hard way. Now I help beginners avoid my mistakes. These books are the systems I wish I had.</p>
+                    <p>I write simple crypto insights, market psychology, and wealth-building lessons. My goal is to help people stay disciplined and think long-term in crypto.</p>
+                    <p>📌 Start here: Learn how to survive and grow in crypto step-by-step.</p>
+                    <p>No hype. Just discipline.</p>
+                </div>
+            </div>
 
-    <div class="bio">
-        <p>I started investing in crypto in 2017. I lost money chasing hype. I learned discipline the hard way. Now I help beginners avoid my mistakes. These books are the systems I wish I had.</p>
+            <div class="sidebar">
+                <h3>📚 Featured Books</h3>
+                <ul>
+                    <li><a href="#">Crypto Clarity</a></li>
+                    <li><a href="#">Crypto Scams & Security</a></li>
+                    <li><a href="#">Nano Personal Finance</a></li>
+                    <li><a href="#">Practical Emotional Control</a></li>
+                    <li><a href="#">The ADHD Life Guide</a></li>
+                </ul>
+            </div>
+        </div>
 
-        <p>I write simple crypto insights, market psychology, and wealth-building lessons. My goal is to help people stay disciplined and think long-term in crypto.</p>
-
-        <p>📌 Start here: Learn how to survive and grow in crypto step-by-step.</p>
-
-        <p>No hype. Just discipline.</p>
-    </div>
-
-    <div class="footer">
         <div class="footer">
-    <div class="social-links">
-        <a href="https://app.binance.com/uni-qr/cpro/imranraousa?l=en&r=GPBQSYCM&uc=web_square_share_link&us=copylink" target="_blank" rel="noopener noreferrer">🔗 Binance Square</a> • 
-        <a href="https://x.com/ImranRa34011317" target="_blank" rel="noopener noreferrer">🐦 X (Twitter)</a> • 
-        <a href="https://youtube.com/@nicheblink4264" target="_blank" rel="noopener noreferrer">📺 YouTube</a> • 
-        <a href="https://github.com/imranrao-ebooks" target="_blank" rel="noopener noreferrer">🐙 GitHub</a>
+            <div class="social-links">
+                <a href="https://app.binance.com/uni-qr/cpro/imranraousa?l=en&r=GPBQSYCM&uc=web_square_share_link&us=copylink" target="_blank" rel="noopener noreferrer">🔗 Binance Square</a> | 
+                <a href="https://x.com/ImranRa34011317" target="_blank" rel="noopener noreferrer">🐦 X</a> | 
+                <a href="https://youtube.com/@nicheblink4264" target="_blank" rel="noopener noreferrer">📺 YouTube</a> | 
+                <a href="https://github.com/imranrao-ebooks" target="_blank" rel="noopener noreferrer">🐙 GitHub</a>
+            </div>
+            <p>© 2025 Imran Rao</p>
+            <p>No hype. Just discipline. 📖</p>
+        </div>
     </div>
-    <p>© 2025 Imran Rao</p>
-    <p>No hype. Just discipline. 📖</p>
-</div>
+
+    <script data-goatcounter="https://imranrao.goatcounter.com/count"
+            async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>
