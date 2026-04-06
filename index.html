@@ -17,7 +17,7 @@
             line-height: 1.6;
             color: #1a1a1a;
             background-color: #f5f5f0;
-            padding: 2rem 1rem;
+            padding: 1rem;
         }
 
         .container {
@@ -25,90 +25,105 @@
             margin: 0 auto;
             background: white;
             border-radius: 20px;
-            padding: 2rem;
+            padding: 1.5rem;
             box-shadow: 0 4px 20px rgba(0,0,0,0.05);
         }
 
-        /* Navigation */
         nav {
             background: #1a3a3a;
-            padding: 1rem 2rem;
+            padding: 0.8rem;
             border-radius: 40px;
-            margin-bottom: 2rem;
+            margin-bottom: 1.5rem;
             text-align: center;
         }
         nav a {
             color: white;
             text-decoration: none;
-            margin: 0 1rem;
+            margin: 0 0.6rem;
             font-weight: 500;
+            font-size: 0.9rem;
+            display: inline-block;
+            padding: 0.3rem 0;
         }
         nav a:hover {
             color: #c7e0e0;
         }
 
-        /* Hero Banner */
+        h1 {
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+        }
+
+        h2 {
+            font-size: 1.3rem;
+            margin: 1rem 0 0.5rem 0;
+        }
+
         .hero {
             background: linear-gradient(135deg, #1a3a3a 0%, #2c5a5a 100%);
             color: white;
-            padding: 3rem 2rem;
-            border-radius: 20px;
-            text-align: center;
-            margin-bottom: 2rem;
-        }
-        .hero h1 {
-            font-size: 2.5rem;
-            margin-bottom: 0.5rem;
-        }
-        .hero p {
-            font-size: 1.2rem;
-            opacity: 0.9;
-        }
-
-        /* Bio Box */
-        .bio {
-            background: #eef2f0;
             padding: 1.5rem;
             border-radius: 16px;
-            margin: 1.5rem 0;
-            border-left: 4px solid #2c7da0;
+            text-align: center;
+            margin-bottom: 1.5rem;
         }
-
-        /* Section Headings */
-        h2 {
+        .hero h1 {
             font-size: 1.8rem;
-            margin: 2rem 0 1rem 0;
-            color: #1a3a3a;
-            border-bottom: 2px solid #e0e6e0;
-            padding-bottom: 0.5rem;
+        }
+        .hero p {
+            font-size: 1rem;
         }
 
-        /* Book Grid */
+        .bio {
+            background: #eef2f0;
+            padding: 1rem;
+            border-radius: 16px;
+            margin: 1rem 0;
+            border-left: 4px solid #2c7da0;
+            font-size: 0.95rem;
+        }
+
         .book-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            gap: 1rem;
+            grid-template-columns: 1fr;
+            gap: 0.8rem;
             margin: 1rem 0;
+        }
+        @media (min-width: 600px) {
+            .book-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (min-width: 900px) {
+            .book-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
         }
         .book-card {
             background: #fafaf5;
-            padding: 1rem;
+            padding: 0.8rem;
             border-radius: 12px;
             border: 1px solid #e0e6e0;
         }
-        .book-card strong {
-            color: #1a3a3a;
-        }
 
-        /* Series Boxes */
         .series-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            gap: 1rem;
+            grid-template-columns: 1fr;
+            gap: 0.8rem;
             margin: 1rem 0;
         }
+        @media (min-width: 600px) {
+            .series-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (min-width: 900px) {
+            .series-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
         .series-card {
-            padding: 1rem;
+            padding: 0.8rem;
             border-radius: 12px;
             background: #fafaf5;
             border-left: 6px solid;
@@ -118,65 +133,54 @@
         .series-card.wealth { border-left-color: #4a6fa5; }
         .series-card.professional { border-left-color: #6b5b95; }
 
-        /* Latest Post */
         .latest-post {
             background: #eef2f0;
-            padding: 1.5rem;
+            padding: 1rem;
             border-radius: 16px;
-            margin: 1.5rem 0;
-        }
-        .latest-post h3 {
-            margin-bottom: 0.5rem;
-        }
-        .latest-post .date {
-            font-size: 0.85rem;
-            color: #6b7a6b;
-            margin-bottom: 0.5rem;
-        }
-
-        /* Footer */
-        .footer {
-            text-align: center;
-            margin-top: 2rem;
-            padding-top: 1.5rem;
-            border-top: 1px solid #e0e6e0;
-            font-size: 0.85rem;
-            color: #6b7a6b;
-        }
-        .social-links {
             margin: 1rem 0;
         }
-        .social-links a {
-            margin: 0 0.75rem;
-            text-decoration: none;
-            color: #1a3a3a;
-        }
 
-        /* Buttons */
         .button {
             display: inline-block;
             background: #1a3a3a;
             color: white;
-            padding: 0.5rem 1rem;
+            padding: 0.4rem 0.8rem;
             border-radius: 30px;
             text-decoration: none;
-            margin-top: 0.5rem;
+            font-size: 0.85rem;
         }
 
-        @media (max-width: 700px) {
+        .footer {
+            text-align: center;
+            margin-top: 1.5rem;
+            padding-top: 1rem;
+            border-top: 1px solid #e0e6e0;
+            font-size: 0.75rem;
+            color: #6b7a6b;
+        }
+        .social-links a {
+            margin: 0 0.4rem;
+            text-decoration: none;
+            color: #1a3a3a;
+            font-size: 0.8rem;
+        }
+
+        @media (max-width: 600px) {
             .container {
                 padding: 1rem;
             }
             nav a {
-                display: inline-block;
-                margin: 0.3rem;
+                margin: 0 0.3rem;
+                font-size: 0.75rem;
+            }
+            h1 {
+                font-size: 1.5rem;
             }
             .hero h1 {
-                font-size: 1.8rem;
+                font-size: 1.4rem;
             }
         }
-    </style>
-        </style>
+</style>
     
     <script data-goatcounter="https://imranrao.goatcounter.com/count"
             async src="//gc.zgo.at/count.js"></script>
