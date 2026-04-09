@@ -172,18 +172,40 @@
         </nav>
 
         <div class="content-wrapper">
-            <div class="main-content">
-                <h1>📈 Crypto & Wealth Series</h1>
-                <p>Structured learning system for investors from beginner to professional.</p>
+            <div class="main-content" id="crypto-content">
+    <h1>📈 Crypto & Wealth Series</h1>
+    <p>Structured learning system for investors from beginner to professional.</p>
+</div>
 
-                <div class="series foundation">
-                    <h2>🟢 Foundation Series (Beginner Track)</h2>
-                    <p>Start here. Learn how to survive, manage risk, and build a safe investing mindset.</p>
-                    <ul>
-                        <li>Crypto Trading for Beginners</li>
-                        <li>Risk First: The Beginner's Guide to Safe and Structured Crypto Investing</li>
-                    </ul>
-                </div>
+<script>
+    const seriesData = {
+        "Foundation Series": ["Crypto Trading for Beginners", "Risk First: The Beginner's Guide to Safe and Structured Crypto Investing"],
+        "Market Cycle Series": ["Bear Market Playbook", "Bull Market Playbook", "Market Signals Playbook", "Exit Strategy Playbook"],
+        "Wealth & Psychology Series": ["Behavioral Investing Playbook", "Long-Term Wealth Playbook", "Wealth Protection Blueprint"],
+        "Professional Portfolio Series": ["ETF Portfolio Playbook", "Asset Allocation Playbook", "Risk Management Playbook", "Institutional Portfolio Playbook", "Portfolio Architecture Playbook"]
+    };
+
+    const container = document.getElementById('crypto-content');
+    const seriesOrder = ["Foundation Series", "Market Cycle Series", "Wealth & Psychology Series", "Professional Portfolio Series"];
+    const seriesColors = {
+        "Foundation Series": "foundation",
+        "Market Cycle Series": "market",
+        "Wealth & Psychology Series": "wealth",
+        "Professional Portfolio Series": "professional"
+    };
+
+    seriesOrder.forEach(series => {
+        const books = seriesData[series];
+        const colorClass = seriesColors[series];
+        let booksHtml = `<div class="series ${colorClass}"><h2>${series}</h2><ul>`;
+        books.forEach(book => {
+            const link = booksData[book] || "#";
+            booksHtml += `<li><a href="${link}" target="_blank" rel="noopener noreferrer">${book}</a></li>`;
+        });
+        booksHtml += `</ul></div>`;
+        container.innerHTML += booksHtml;
+    });
+</script>
 
                 <div class="series market">
                     <h2>🟠 Market Cycle Series (Core Strategy Track)</h2>
