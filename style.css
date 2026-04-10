@@ -230,3 +230,46 @@ nav a:hover {
 .latest-post-box a {
     color: #c7e0e0;
 }
+/* Make the entire main content area dark */
+.main-content {
+    background: #1a3a3a;
+    padding: 1.5rem;
+    border-radius: 20px;
+    color: white;
+}
+.main-content h2 {
+    color: white;
+}
+.main-content a {
+    color: #c7e0e0;
+}
+.main-content a:hover {
+    color: white;
+}
+.book-card {
+    background: #2c3e50;
+    border: none;
+    color: white;
+}
+.book-card a {
+    color: #c7e0e0;
+}
+.category-list li {
+    background: #2c3e50;
+    color: white;
+    border-left-color: #c7e0e0;
+}
+.latest-post {
+    background: #2c3e50;
+    color: white;
+}
+.latest-post .date {
+    color: #c7e0e0;
+}
+.button {
+    background: #c7e0e0;
+    color: #1a3a3a;
+}
+.button:hover {
+    background: white;
+}
