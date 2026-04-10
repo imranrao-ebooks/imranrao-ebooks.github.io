@@ -209,3 +209,24 @@ nav a:hover {
 .sidebar {
     background: #1a3a3a;
 }
+/* Box styles for Featured Books, Categories, Latest Post */
+.featured-books-box,
+.categories-box,
+.latest-post-box {
+    background: #1a3a3a;
+    color: white;
+    padding: 1rem;
+    border-radius: 16px;
+    margin-bottom: 1.5rem;
+}
+.featured-books-box h2,
+.categories-box h2,
+.latest-post-box h2 {
+    color: white;
+    margin-top: 0;
+}
+.featured-books-box a,
+.categories-box a,
+.latest-post-box a {
+    color: #c7e0e0;
+}
