@@ -268,3 +268,32 @@ nav a:hover {
 .button:hover {
     background: white;
 }
+/* Restore light background for main content area (except hero and latest post) */
+.main-content {
+    background: transparent;
+    padding: 0;
+}
+.featured-books-box,
+.categories-box {
+    background: #fafaf5;
+    padding: 1rem;
+    border-radius: 16px;
+    margin-bottom: 1.5rem;
+}
+.latest-post-box {
+    background: #1a3a3a;
+    padding: 1rem;
+    border-radius: 16px;
+    margin-bottom: 1.5rem;
+}
+.latest-post-box h2 {
+    color: white;
+}
+.latest-post-box .latest-post {
+    background: #2c3e50;
+    color: white;
+}
+.latest-post-box .button {
+    background: #c7e0e0;
+    color: #1a3a3a;
+}
