@@ -231,12 +231,7 @@ nav a:hover {
     color: #c7e0e0;
 }
 /* Make the entire main content area dark */
-.main-content {
-    background: #1a3a3a;
-    padding: 1.5rem;
-    border-radius: 20px;
-    color: white;
-}
+
 .main-content h2 {
     color: white;
 }
