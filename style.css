@@ -169,7 +169,7 @@ nav a:hover {
     margin: 0.5rem 0;
     padding: 0.8rem;
     border-radius: 12px;
-    border-left: 4px solid #2c7da0;
+        border: 2px solid #2c7da0;
 }
 
 .latest-post {
