@@ -88,17 +88,22 @@
     </div>
     
     <script>
-    if (postsData && postsData.length > 0) {
-        const latest = postsData[0];
-        document.getElementById('latest-post-container').innerHTML = `
-            <h3>${latest.title}</h3>
-            <div class="date">${latest.date}</div>
-            <p>${latest.excerpt}</p>
-            <a href="${latest.url}" class="button">Read more →</a>
-        `;
-    } else {
-        document.getElementById('latest-post-container').innerHTML = '<p>No posts found.</p>';
-    }
+    document.addEventListener('DOMContentLoaded', function() {
+        if (postsData && postsData.length > 0) {
+            const latest = postsData[0];
+            const container = document.getElementById('latest-post-container');
+            if (container) {
+                container.innerHTML = `
+                    <h3>${latest.title}</h3>
+                    <div class="date">${latest.date}</div>
+                    <p>${latest.excerpt}</p>
+                    <a href="${latest.url}" class="button">Read more →</a>
+                `;
+            }
+        } else {
+            document.getElementById('latest-post-container').innerHTML = '<p>No posts found.</p>';
+        }
+    });
 </script>
 </body>
 </html>
