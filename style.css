@@ -297,3 +297,32 @@ nav a:hover {
     background: #c7e0e0;
     color: #1a3a3a;
 }
+/* Posts page styling */
+.post-item {
+    background: #fafaf5;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 16px;
+    border-left: 4px solid #2c7da0;
+}
+.post-item h3 {
+    margin-top: 0;
+}
+.post-item .date {
+    color: gray;
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
+}
+.read-more {
+    display: inline-block;
+    background: #1a3a3a;
+    color: white;
+    padding: 6px 16px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 0.85rem;
+    margin-top: 10px;
+}
+.read-more:hover {
+    background: #2c3e50;
+}
