@@ -53,14 +53,15 @@ nav a:hover {
 .sidebar {
     flex: 1;
     min-width: 200px;
-    background: #fafaf5;
+    background: #2c3e50;
     padding: 1rem;
     border-radius: 16px;
-    align-self: start;
+    align-self: stretch;
+    color: white;
 }
 .sidebar h3 {
+    color: white;
     margin-bottom: 0.5rem;
-    color: #1a3a3a;
 }
 .sidebar ul {
     list-style: none;
@@ -71,8 +72,11 @@ nav a:hover {
     margin-bottom: 0.5rem;
 }
 .sidebar a {
+    color: white;
     text-decoration: none;
-    color: #2c7da0;
+}
+.sidebar a:hover {
+    text-decoration: underline;
 }
 
 .footer {
