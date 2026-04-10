@@ -326,3 +326,10 @@ nav a:hover {
 .read-more:hover {
     background: #2c3e50;
 }
+.featured-books-box,
+.categories-box {
+    background: #fafaf5;
+    padding: 1rem;
+    border-radius: 16px;
+    margin-bottom: 1.5rem;
+}
