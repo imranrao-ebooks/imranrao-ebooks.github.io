@@ -211,7 +211,12 @@ nav a:hover {
 }
 /* Box styles for Featured Books, Categories, Latest Post */
 .featured-books-box,
-.categories-box,
+.categories-box {
+    background: #eef2f0;
+    padding: 1rem;
+    border-radius: 16px;
+    margin-bottom: 1.5rem;
+}
 .latest-post-box {
     background: #1a3a3a;
     color: white;
