@@ -78,16 +78,21 @@ nav a:hover {
 .footer {
     text-align: center;
     margin-top: 1.5rem;
-    padding-top: 1rem;
+    padding: 1rem;
     border-top: 1px solid #e0e6e0;
-    font-size: 0.75rem;
-    color: #6b7a6b;
+    background: #1a3a3a;
+    color: white;
+    border-radius: 20px;
 }
-.social-links a {
+.footer .social-links a {
     margin: 0 0.4rem;
     text-decoration: none;
-    color: #1a3a3a;
+    color: white;
     font-size: 0.8rem;
+}
+.footer p {
+    margin-top: 0.5rem;
+    color: #c7e0e0;
 }
 
 .hero {
