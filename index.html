@@ -10,8 +10,8 @@
     
     <script data-goatcounter="https://imranrao.goatcounter.com/count"
             async src="//gc.zgo.at/count.js"></script>
+            <script src="posts-data.js"></script>
 
-</head>
 </head>
 <body>
     <div class="container">
@@ -87,31 +87,18 @@
         </div>
     </div>
     <script>
-    fetch('posts.html')
-        .then(response => response.text())
-        .then(data => {
-            const parser = new DOMParser();
-            const doc = parser.parseFromString(data, 'text/html');
-            const firstPost = doc.querySelector('.post');
-            if (firstPost) {
-                const title = firstPost.querySelector('h2')?.innerHTML || '';
-                const date = firstPost.querySelector('.date')?.innerHTML || '';
-                const excerpt = firstPost.querySelector('p')?.innerHTML || '';
-                const link = firstPost.querySelector('a')?.getAttribute('href') || '#';
-
-                document.getElementById('latest-post-container').innerHTML = `
-                    <h3>${title}</h3>
-                    <div class="date">${date}</div>
-                    <p>${excerpt}</p>
-                    <a href="${link}" class="button">Read more →</a>
-                `;
-            } else {
-                document.getElementById('latest-post-container').innerHTML = '<p>No posts found.</p>';
-            }
-        })
-        .catch(() => {
-            document.getElementById('latest-post-container').innerHTML = '<p>Could not load latest post.</p>';
-        });
+    <script>
+    if (typeof postsData !== 'undefined' && postsData.length > 0) {
+        const latest = postsData[0];
+        document.getElementById('latest-post-container').innerHTML = `
+            <h3>${latest.title}</h3>
+            <div class="date">${latest.date}</div>
+            <p>${latest.excerpt}</p>
+            <a href="${latest.url}" class="button">Read more →</a>
+        `;
+    } else {
+        document.getElementById('latest-post-container').innerHTML = '<p>No posts found.</p>';
+    }
 </script>
 </body>
 </html>
