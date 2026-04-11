@@ -338,3 +338,11 @@ nav a:hover {
     border-radius: 16px;
     margin-bottom: 1.5rem;
 }
+.post-item h3 a {
+    color: #1a3a3a;
+    text-decoration: none;
+}
+.post-item h3 a:hover {
+    color: #2c7da0;
+    text-decoration: underline;
+}
