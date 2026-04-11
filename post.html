@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, view-fit=cover">
     <link rel="icon" type="image/png" href="/image/favicon.png">
-    <title>Imran Rao</title>
+    <title>Imran Rao | Posts</title>
     <link rel="stylesheet" href="style.css">
+    <script src="posts-data.js"></script>
 </head>
 <body>
     <div class="container">
@@ -20,29 +21,9 @@
 
         <div class="content-wrapper">
             <div class="main-content">
-    <h1>📝 Daily Posts</h1>
-    <div id="posts-list"></div>
-</div>
-
-<script src="posts-data.js"></script>
-<script>
-    const postsContainer = document.getElementById('posts-list');
-    function displayPosts() {
-        let html = '';
-        postsData.forEach(post => {
-            html += `
-                <div class="post-item">
-                    <h3><a href="${post.url}">${post.title}</a></h3>
-                    <div class="date">${post.date}</div>
-                    <p>${post.excerpt}</p>
-                    <a href="${post.url}" class="read-more">Read more →</a>
-                </div>
-            `;
-        });
-        postsContainer.innerHTML = html;
-    }
-    displayPosts();
-</script>
+                <h1>📝 Daily Posts</h1>
+                <div id="posts-list"></div>
+            </div>
             <div class="sidebar">
                 <h3>📚 Featured Books</h3>
                 <ul>
@@ -66,5 +47,24 @@
             <p>No hype. Just discipline. 📖</p>
         </div>
     </div>
+
+    <script>
+        const postsContainer = document.getElementById('posts-list');
+        function displayPosts() {
+            let html = '';
+            postsData.forEach(post => {
+                html += `
+                    <div class="post-item">
+                        <h3><a href="${post.url}">${post.title}</a></h3>
+                        <div class="date">${post.date}</div>
+                        <p>${post.excerpt}</p>
+                        <a href="${post.url}" class="read-more">Read more →</a>
+                    </div>
+                `;
+            });
+            postsContainer.innerHTML = html;
+        }
+        displayPosts();
+    </script>
 </body>
-</html> 
+</html>
