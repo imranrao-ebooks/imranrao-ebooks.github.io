@@ -1,20 +1,70 @@
-const postsData = [
-    {
-        title: "How to Build Passive Income Without Getting Rich First",
-        date: "April 8, 2025",
-        excerpt: "Most people think passive income is only for the wealthy. They imagine real estate moguls, venture capitalists, or people who inherited money. That is a myth.",
-        url: "post-passive-income.html"
-    },
-    {
-        title: "Why Most Crypto Beginners Lose Money",
-        date: "April 5, 2025",
-        excerpt: "Every bull market, millions of new investors enter crypto. Most of them lose money. Not because crypto is a scam. Because they make the same predictable mistakes over and over.",
-        url: "post-why-beginners-lose.html"
-    },
-    {
-        title: "How to Spot a Crypto Scam",
-        date: "April 5, 2025",
-        excerpt: "Most scams follow the same pattern. Scammers promise guaranteed returns, use fake celebrity endorsements, and create urgency. They want you to act fast without thinking.",
-        url: "post-spot-crypto-scam.html"
-    }
-];
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, view-fit=cover">
+    <link rel="icon" type="image/png" href="/image/favicon.png">
+    <title>Imran Rao | Posts</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="posts-data.js"></script>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="posts.html">Posts</a>
+            <a href="books.html">Books</a>
+            <a href="crypto-series.html">Crypto Series</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <div class="content-wrapper">
+            <div class="main-content">
+                <h1>📝 Daily Posts</h1>
+                <div id="posts-list"></div>
+            </div>
+            <div class="sidebar">
+                <h3>📚 Featured Books</h3>
+                <ul>
+                    <li><a href="https://www.amazon.com/dp/B0GN5FSL3Y" target="_blank" rel="noopener noreferrer">Crypto Clarity</a></li>
+                    <li><a href="https://www.amazon.com/dp/B0GPD6W3RJ" target="_blank" rel="noopener noreferrer">Crypto Scams & Security</a></li>
+                    <li><a href="https://www.amazon.com/dp/B0GR87G6CJ" target="_blank" rel="noopener noreferrer">Nano Personal Finance</a></li>
+                    <li><a href="https://www.amazon.com/dp/B0GRW4GGXQ" target="_blank" rel="noopener noreferrer">Practical Emotional Control</a></li>
+                    <li><a href="https://www.amazon.com/dp/B0DS9ZTCP4" target="_blank" rel="noopener noreferrer">The ADHD Life Guide</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="social-links">
+                <a href="https://app.binance.com/uni-qr/cpro/imranraousa?l=en&r=GPBQSYCM&uc=web_square_share_link&us=copylink" target="_blank" rel="noopener noreferrer">🔗 Binance Square</a> | 
+                <a href="https://x.com/ImranRa34011317" target="_blank" rel="noopener noreferrer">🐦 X</a> | 
+                <a href="https://youtube.com/@nicheblink4264" target="_blank" rel="noopener noreferrer">📺 YouTube</a> | 
+                <a href="https://github.com/imranrao-ebooks" target="_blank" rel="noopener noreferrer">🐙 GitHub</a>
+            </div>
+            <p>© 2025 Imran Rao</p>
+            <p>No hype. Just discipline. 📖</p>
+        </div>
+    </div>
+
+    <script>
+        const postsContainer = document.getElementById('posts-list');
+        function displayPosts() {
+            let html = '';
+            postsData.forEach(post => {
+                html += `
+                    <div class="post-item">
+                        <h3><a href="${post.url}">${post.title}</a></h3>
+                        <div class="date">${post.date}</div>
+                        <p>${post.excerpt}</p>
+                        <a href="${post.url}" class="read-more">Read more →</a>
+                    </div>
+                `;
+            });
+            postsContainer.innerHTML = html;
+        }
+        displayPosts();
+    </script>
+</body>
+</html>
