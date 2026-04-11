@@ -399,3 +399,39 @@ nav a:hover {
     color: white;
     text-decoration: underline;
 }
+.category-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+.category-card {
+    background: #fafaf5;
+    padding: 1rem;
+    border-radius: 16px;
+    border-left: 4px solid #2c7da0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+.category-card h2 {
+    margin-top: 0;
+    font-size: 1.3rem;
+    color: #1a3a3a;
+    margin-bottom: 0.5rem;
+}
+.category-card ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+.category-card li {
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+    color: #1a1a1a;
+}
+.category-card a {
+    text-decoration: none;
+    color: #2c7da0;
+}
+.category-card a:hover {
+    text-decoration: underline;
+}
