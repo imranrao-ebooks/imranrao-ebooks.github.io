@@ -465,3 +465,22 @@ nav a:hover {
 .go-to-top:hover {
     background: #2c5a5a;
 }
+.category-menu-vertical {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin: 1rem 0 2rem 0;
+}
+.category-menu-vertical a {
+    background: #1a3a3a;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    display: inline-block;
+    width: fit-content;
+}
+.category-menu-vertical a:hover {
+    background: #2c5a5a;
+}
