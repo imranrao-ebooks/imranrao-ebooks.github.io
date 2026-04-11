@@ -435,3 +435,33 @@ nav a:hover {
 .category-card a:hover {
     text-decoration: underline;
 }
+.category-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem 0 2rem 0;
+}
+.category-menu a {
+    background: #1a3a3a;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 0.85rem;
+}
+.category-menu a:hover {
+    background: #2c5a5a;
+}
+.go-to-top {
+    display: inline-block;
+    background: #1a3a3a;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 0.85rem;
+}
+.go-to-top:hover {
+    background: #2c5a5a;
+}
