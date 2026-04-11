@@ -356,3 +356,14 @@ nav a:hover {
     padding: 1.5rem;
     border-radius: 16px;
 }
+.book-list {
+    list-style: none;
+    padding-left: 0;
+}
+.book-list li {
+    background: #fafaf5;
+    margin: 0.5rem 0;
+    padding: 0.8rem;
+    border-radius: 12px;
+    border-left: 4px solid #2c7da0;
+}
