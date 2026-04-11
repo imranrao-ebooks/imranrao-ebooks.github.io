@@ -346,3 +346,7 @@ nav a:hover {
     color: #2c7da0;
     text-decoration: underline;
 }
+.featured-books-box h2,
+.categories-box h2 {
+    color: #1a3a3a !important;
+}
