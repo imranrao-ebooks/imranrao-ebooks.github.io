@@ -295,3 +295,10 @@ nav a:hover {
     border-radius: 12px;
     border-left: 4px solid #2c7da0;
 }
+.category-list li {
+    background: #fafaf5;
+    margin: 0.5rem 0;
+    padding: 0.8rem;
+    border-radius: 12px;
+    border-left: 4px solid #2c7da0;
+}
