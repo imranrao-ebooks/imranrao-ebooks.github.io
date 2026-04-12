@@ -326,6 +326,7 @@ nav a:hover {
     border-radius: 12px;
     border: 1px solid #e0e6e0;
 }
+
 .book-stack {
     display: flex;
     flex-direction: column;
