@@ -511,3 +511,21 @@ nav a:hover {
 .latest-post p {
     color: #1a1a1a;
 }
+.crypto-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem 0 2rem 0;
+}
+.crypto-menu a {
+    background: #1a3a3a;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 0.85rem;
+}
+.crypto-menu a:hover {
+    background: #2c5a5a;
+}
