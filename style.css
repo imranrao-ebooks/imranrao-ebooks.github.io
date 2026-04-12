@@ -255,3 +255,21 @@ nav a:hover {
 .crypto-menu a:hover {
     background: #2c5a5a;
 }
+.category-menu-horizontal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem 0 2rem 0;
+}
+.category-menu-horizontal a {
+    background: #1a3a3a;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 0.85rem;
+}
+.category-menu-horizontal a:hover {
+    background: #2c5a5a;
+}
