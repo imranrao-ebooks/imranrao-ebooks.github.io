@@ -337,3 +337,27 @@ nav a:hover {
     gap: 1rem;
     margin: 1rem 0;
 }
+/* Full post page styling */
+.post-full h1 {
+    background: #fafaf5;
+    padding: 1rem;
+    border-radius: 16px;
+    border-left: 4px solid #2c7da0;
+    color: #1a3a3a;
+    margin-bottom: 1rem;
+}
+.post-full h2 {
+    background: #fafaf5;
+    padding: 0.8rem;
+    border-radius: 16px;
+    border-left: 4px solid #2c7da0;
+    color: #1a3a3a;
+    margin: 1.5rem 0 0.5rem 0;
+}
+.post-full p {
+    margin-bottom: 1rem;
+    line-height: 1.15;
+}
+.post-full p + p {
+    margin-top: 1.5rem;
+}
