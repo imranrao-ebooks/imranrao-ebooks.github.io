@@ -128,6 +128,10 @@ nav a:hover {
     border-radius: 16px;
     border-left: 4px solid #2c7da0;
 }
+.post-item p {
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+}
 .post-item .date {
     color: gray;
     font-size: 0.85rem;
