@@ -361,3 +361,13 @@ nav a:hover {
 .post-full p + p {
     margin-top: 1.5rem;
 }
+.back-link {
+    display: inline-block;
+    background: #1a3a3a;
+    color: white;
+    padding: 6px 16px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+}
