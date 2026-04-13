@@ -1,4 +1,10 @@
 const postsData = [
+        {
+        title: "You Have $100. Here's Exactly How to Start Crypto the Right Way",
+        date: "April 13, 2025",
+        excerpt: "Most beginners spread $100 across ten coins. They own nothing. Understand nothing. Here is a better way. A simple roadmap to build real knowledge and real wealth.",
+        url: "post-crypto-start-guide.html"
+    },
     {
         title: "How to Build Passive Income Without Getting Rich First",
         date: "April 8, 2025",
