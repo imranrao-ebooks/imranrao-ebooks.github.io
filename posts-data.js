@@ -1,4 +1,16 @@
 const postsData = [
+     {
+        title: "Screen Time Recommendations by Age: A Parent's Guide to Healthy Limits",
+        date: "April 26, 2025",
+        excerpt: "Screen time recommendations by age for children 0-18. Plus simple rules like no phones at the table.",
+        url: "post-screen-time-guide-v2.html"
+    },
+    {
+        title: "You Have $100. Here's Exactly How to Start Crypto the Right Way",
+        date: "April 13, 2025",
+        excerpt: "Most beginners spread $100 across ten coins...",
+        url: "post-crypto-start-guide.html"
+    },
         {
         title: "You Have $100. Here's Exactly How to Start Crypto the Right Way",
         date: "April 13, 2025",
