@@ -8,6 +8,47 @@
     <meta name="description" content="Screen time recommendations by age for children 0-18. Plus simple rules like no phones at the table and how to enforce limits without daily fights.">
     <meta name="keywords" content="screen time recommendations by age, screen time limits by age, phone on the table rule, recommended screen time for teenager">
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Background box style for H1 and H2 */
+        article h1, article h2 {
+            background-color: #f0f0f0;
+            padding: 12px 16px;
+            border-radius: 8px;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        article h1 {
+            font-size: 1.8rem;
+        }
+        article h2 {
+            font-size: 1.5rem;
+        }
+        .back-to-top-btn {
+            background: #333;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 6px;
+            text-decoration: none;
+            display: inline-block;
+            margin-bottom: 2rem;
+        }
+        .back-to-top-btn:hover {
+            background: #555;
+        }
+        .book-cover {
+            text-align: center;
+            margin: 2rem 0;
+        }
+        .book-cover img {
+            max-width: 250px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .bottom-back-link {
+            text-align: center;
+            margin: 2rem 0;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -23,10 +64,9 @@
         <div class="content-wrapper">
             <div class="main-content">
                 <article>
+                    <a href="posts.html" class="back-to-top-btn">← Back to Posts</a>
+
                     <h1>Screen Time Recommendations by Age: A Parent's Guide to Healthy Limits</h1>
-                    <div style="margin: 0 0 2rem 0; text-align: center;">
-    <a href="posts.html">← Back to Posts</a>
-</div>
 
                     <p>Most parents guess when it comes to screen time. You hope you are doing the right thing. But no one gives you a clear answer.</p>
 
@@ -70,7 +110,7 @@
                     <p><strong>Tip:</strong> Keep devices in common areas. No phones in the bedroom overnight.</p>
 
                     <h3>Ages 13‑18 – 2 Hours, Teach Self‑Control</h3>
-                    <p>The <strong>recommended screen time for teenagers </strong> is no more than 2 hours of recreational screen time per day (schoolwork separate). At this stage, your goal is self-management.</p>
+                    <p>The <strong>recommended screen time for teenager</strong> is no more than 2 hours of recreational screen time per day (schoolwork separate). At this stage, your goal is self-management.</p>
                     <p>They will have unlimited access soon. Teach them to recognize when screen time hurts their sleep, mood, or grades.</p>
                     <p><strong>Tip:</strong> Create a family contract. Both parents and teens sign it. Update it every few months.</p>
 
@@ -82,9 +122,14 @@
 
                     <p>No shame. No judgment. Just practical steps that work.</p>
 
-                    <p><a href="https://www.amazon.com/dp/B0GX32H7HQ" target="_blank">Buy Screen Wars on Amazon →</a></p>
+                    <div class="book-cover">
+                        <a href="https://www.amazon.com/dp/B0GX32H7HQ" target="_blank">
+                            <img src="/image/scren wars book cover.jpg" alt="Screen Wars book cover">
+                        </a>
+                        <p><a href="https://www.amazon.com/dp/B0GX32H7HQ" target="_blank">Buy Screen Wars on Amazon →</a></p>
+                    </div>
 
-                    <img src="/image/dinner table.jpg" alt="Family dinner with phones in a basket - no phones at the table rule" style="max-width:100%; margin: 1rem 0;">
+                    <img src="/image/dinner table.jpg" alt="Family dinner with phones in a basket" style="max-width:100%; margin: 1rem 0;">
 
                     <h2>The "Phone on the Table" Rule – Why It Works</h2>
 
@@ -159,15 +204,11 @@
 
                     <p>For a complete system with real scripts, a printable contract, and 50 screen-free activities, get your copy of <em>Screen Wars</em> today.</p>
 
-                    <div style="text-align: center; margin: 2rem 0;">
-    <a href="https://www.amazon.com/dp/B0GX32H7HQ" target="_blank">
-        <img src="/image/screen-wars-cover.jpg" alt="Screen Wars book cover" style="max-width: 250px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-    </a>
-    <p><a href="https://www.amazon.com/dp/B0GX32H7HQ" target="_blank">Buy Screen Wars on Amazon →</a></p>
-</div>
-                    <div style="margin: 2rem 0; text-align: center;">
-    <a href="posts.html">← Back to Posts</a>
-</div>
+                    <p><a href="https://www.amazon.com/dp/B0GX32H7HQ" target="_blank">Buy Screen Wars on Amazon →</a></p>
+
+                    <div class="bottom-back-link">
+                        <a href="posts.html">← Back to Posts</a>
+                    </div>
                 </article>
             </div>
 
