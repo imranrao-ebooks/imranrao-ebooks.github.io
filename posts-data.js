@@ -1,5 +1,5 @@
 const postsData = [
-     {{
+     {
     title: "What Is Personal Finance? A Beginner's Guide",
     date: "April 29, 2026",
     excerpt: "The 5 types of personal finance explained. Personal finance for beginners, personal finance management, and a complete personal finance summary.",
