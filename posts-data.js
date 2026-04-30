@@ -41,4 +41,4 @@ const postsData = [
         excerpt: "Most scams follow the same pattern. Scammers promise guaranteed returns, use fake celebrity endorsements, and create urgency. They want you to act fast without thinking.",
         url: "post-spot-crypto-scam.html"
     }
-];
+]; 
