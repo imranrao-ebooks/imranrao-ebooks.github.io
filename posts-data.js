@@ -1,10 +1,11 @@
 const postsData = [
-     {
-    title: "What Is Personal Finance? A Beginner's Guide",
-    date: "April 29, 2026",
-    excerpt: "The 5 types of personal finance explained. Personal finance for beginners, personal finance management, and a complete personal finance summary.",
-    url: "post-personal-finance-guide.html"
-},
+    {
+        title: "Personal Finance Summary – A Beginner's Guide",
+        date: "April 30, 2026",
+        excerpt: "A clear personal finance summary covering budgeting, saving, investing, debt management, and risk management.",
+        url: "post-personal-finance-guide.html"
+    },
+    {
         title: "Screen Time Recommendations by Age: A Parent's Guide to Healthy Limits",
         date: "April 26, 2025",
         excerpt: "Screen time recommendations by age for children 0-18. Plus simple rules like no phones at the table.",
