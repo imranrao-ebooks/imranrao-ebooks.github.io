@@ -106,3 +106,13 @@ nav a:hover {
         min-width: auto;
     }
 }
+
+/* Paragraph spacing */
+p {
+    margin-bottom: 1rem;
+}
+
+.main-content p {
+    margin-bottom: 1.2rem;
+    line-height: 1.6;
+}
