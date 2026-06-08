@@ -118,7 +118,11 @@ p {
 }
 .category-menu {
     position: sticky;
-    top: 10px;
+    top: 0;
     z-index: 1000;
     background: #1a3a3a;
+    width: 100%;
+}
+.content-wrapper {
+    margin-top: 80px;
 }
