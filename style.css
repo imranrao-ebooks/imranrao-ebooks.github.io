@@ -116,13 +116,3 @@ p {
     margin-bottom: 1.2rem;
     line-height: 1.6;
 }
-.category-menu {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    background: #1a3a3a;
-    width: 100%;
-}
-.content-wrapper {
-    margin-top: 80px;
-}
