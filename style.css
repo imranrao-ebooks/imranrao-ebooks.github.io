@@ -119,6 +119,6 @@ p {
 .category-menu {
     position: sticky;
     top: 10px;
-    z-index: 100;
+    z-index: 1000;
     background: #1a3a3a;
 }
