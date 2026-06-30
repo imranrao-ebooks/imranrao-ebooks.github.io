@@ -98,6 +98,11 @@
             <p>No hype. Just discipline. 📖</p>
         </div>
     </div>
-    <script src="https://cdn.paddle.com/paddle/v2/paddle.js"></script>
+    <script>
+    Paddle.Environment.set('sandbox');
+    Paddle.Initialize({
+        token: 'paddle_live_xxxxxxxxxxxxx' // Replace with your actual token
+    });
+</script>
 </body>
 </html>
